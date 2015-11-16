@@ -20,7 +20,7 @@ html, body {
     -webkit-transform: rotate3d(1,1,1,0deg);
   }
   to {
-    -webkit-transform: rotate3d(1,1,0,-360deg);
+    -webkit-transform: rotate3d(1,1,0,-180deg);
   }
 }
 @-moz-keyframes boxspin {
@@ -28,7 +28,7 @@ html, body {
     -moz-transform: rotate3d(1,1,1,0deg);
   }
   to {
-    -moz-transform: rotate3d(1,1,0,-360deg);
+    -moz-transform: rotate3d(1,1,0,-180deg);
   }
 }
 @-o-keyframes boxspin {
@@ -36,7 +36,7 @@ html, body {
     -o-transform: rotate3d(1,1,1,0deg);
   }
   to {
-    -o-transform: rotate3d(1,1,0,-360deg);
+    -o-transform: rotate3d(1,1,0,-180deg);
   }
 }
 @keyframes boxspin {
@@ -44,7 +44,7 @@ html, body {
     transform: rotate3d(1,1,1,0deg);
   }
   to {
-    transform: rotate3d(1,1,0,-360deg);
+    transform: rotate3d(1,1,0,-180deg);
   }
 }
 
@@ -100,10 +100,10 @@ html, body {
   }
 
   #box {
-    -webkit-animation: boxspin 6s linear infinite;
-    -moz-animation:    boxspin 6s linear infinite;
-    -o-animation:      boxspin 6s linear infinite;
-    animation:         boxspin 6s linear infinite;
+    -webkit-animation: boxspin 3s linear infinite;
+    -moz-animation:    boxspin 3s linear infinite;
+    -o-animation:      boxspin 3s linear infinite;
+    animation:         boxspin 3s linear infinite;
     position: absolute;
     width: 120px;
     height: 120px;

@@ -5,9 +5,11 @@ var $loadingScreen = $("#intro");
 
 
 $(window).load(function () {
-  $loadingScreen.fadeOut(2000,function() {
-    $loadingScreen.remove();
-  });
+  setTimeout(function () {
+    $loadingScreen.fadeOut(2000,function() {
+      $loadingScreen.remove();
+    });
+  }, 1000);
 });
 
 

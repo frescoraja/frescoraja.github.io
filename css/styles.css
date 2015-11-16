@@ -15,22 +15,22 @@ html, body {
   from {
     -webkit-transform: rotate3d(1, 1, 1, 0deg); }
   to {
-    -webkit-transform: rotate3d(1, 1, 0, -360deg); } }
+    -webkit-transform: rotate3d(1, 1, 0, -180deg); } }
 @-moz-keyframes boxspin {
   from {
     -moz-transform: rotate3d(1, 1, 1, 0deg); }
   to {
-    -moz-transform: rotate3d(1, 1, 0, -360deg); } }
+    -moz-transform: rotate3d(1, 1, 0, -180deg); } }
 @-o-keyframes boxspin {
   from {
     -o-transform: rotate3d(1, 1, 1, 0deg); }
   to {
-    -o-transform: rotate3d(1, 1, 0, -360deg); } }
+    -o-transform: rotate3d(1, 1, 0, -180deg); } }
 @keyframes boxspin {
   from {
     transform: rotate3d(1, 1, 1, 0deg); }
   to {
-    transform: rotate3d(1, 1, 0, -360deg); } }
+    transform: rotate3d(1, 1, 0, -180deg); } }
 @-webkit-keyframes dotspin {
   from {
     -webkit-transform: rotateZ(0deg); }
@@ -66,10 +66,10 @@ html, body {
     -ms-transform-style: preserve-3d;
     transform-style: preserve-3d; }
   #intro #box {
-    -webkit-animation: boxspin 6s linear infinite;
-    -moz-animation: boxspin 6s linear infinite;
-    -o-animation: boxspin 6s linear infinite;
-    animation: boxspin 6s linear infinite;
+    -webkit-animation: boxspin 3s linear infinite;
+    -moz-animation: boxspin 3s linear infinite;
+    -o-animation: boxspin 3s linear infinite;
+    animation: boxspin 3s linear infinite;
     position: absolute;
     width: 120px;
     height: 120px;
