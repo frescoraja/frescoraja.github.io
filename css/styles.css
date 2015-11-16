@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700);
 @font-face {
   font-family: 'Orator';
   src: url("../type/oratorstd-webfont.eot?") format("eot"), url("../type/oratorstd-webfont.woff") format("woff"), url("../type/oratorstd-webfont.ttf") format("truetype");
@@ -168,6 +168,14 @@ nav {
       #content .index.info a:hover {
         color: black;
         box-shadow: white 0px -1.2em 0px inset; }
+  #content .work {
+    text-align: center;
+    color: white; }
+    #content .work header {
+      height: 200px; }
+      #content .work header h3 {
+        font-family: 'Josefine Sans' sans-serif;
+        font-size: 20px; }
 
 #s01 {
   background-color: #fe4141; }
@@ -190,16 +198,16 @@ nav {
 #s07 {
   background-color: #4893f7; }
 
-#plainte {
+#s08 {
   background-color: #5561fa; }
 
-#s08 {
+#s09 {
   background-color: #9367ff; }
 
-#s09 {
+#s10 {
   background-color: #dc67ff; }
 
-#s10 {
+#plainte {
   background-color: #fe5daf; }
 
 .shootme {
@@ -222,9 +230,13 @@ nav {
     cursor: pointer; }
 
 #digi {
-  font-family: Raleway;
-  background-color: #ff3d48;
-  color: white; }
+  background-color: #f9d56a; }
+
+#crap {
+  background-color: #88ebe8; }
+
+#paint {
+  background-color: #38428b; }
 
 /*
 ---------------------> Sidebar Menu Styling <---------------------

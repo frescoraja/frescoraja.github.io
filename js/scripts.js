@@ -6,10 +6,10 @@ var $loadingScreen = $("#intro");
 
 $(window).load(function () {
   setTimeout(function () {
-    $loadingScreen.fadeOut(2000,function() {
+    $loadingScreen.fadeOut(3000,function() {
       $loadingScreen.remove();
     });
-  }, 1000);
+  }, 0);
 });
 
 
