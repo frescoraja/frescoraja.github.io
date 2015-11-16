@@ -1,0 +1,498 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,700);
+@font-face {
+  font-family: 'Orator';
+  src: url("../type/oratorstd-webfont.eot?") format("eot"), url("../type/oratorstd-webfont.woff") format("woff"), url("../type/oratorstd-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+/*
+---------------------> Intro DIV Styling <---------------------
+*/
+
+@-webkit-keyframes boxspin {
+  from {
+    transform: rotate3d(1,1,1,0deg);
+  }
+  to {
+    transform: rotate3d(1,1,0,-360deg);
+  }
+}
+@-moz-keyframes boxspin {
+  from {
+    transform: rotate3d(1,1,1,0deg);
+  }
+  to {
+    transform: rotate3d(1,1,0,-360deg);
+  }
+}
+@-o-keyframes boxspin {
+  from {
+    transform: rotate3d(1,1,1,0deg);
+  }
+  to {
+    transform: rotate3d(1,1,0,-360deg);
+  }
+}
+@keyframes boxspin {
+  from {
+    transform: rotate3d(1,1,1,0deg);
+  }
+  to {
+    transform: rotate3d(1,1,0,-360deg);
+  }
+}
+
+@-webkit-keyframes dotspin {
+  from   {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(1080deg);
+  }
+}
+@-moz-keyframes dotspin {
+  from   {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(1080deg);
+  }
+}
+@-o-keyframes dotspin {
+  from   {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(1080deg);
+  }
+}
+@keyframes dotspin {
+  from   {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(1080deg);
+  }
+}
+
+
+#intro {
+  z-index: 100;
+  position: fixed;
+  background: black;
+  height: 100%;
+  width: 100%;
+
+  .context {
+    height: 100%;
+    perspective: 800px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  #box {
+    -webkit-animation: boxspin 6s linear infinite;
+    -moz-animation:    boxspin 6s linear infinite;
+    -o-animation:      boxspin 6s linear infinite;
+    animation:         boxspin 6s linear infinite;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 50%;
+    top: 50%;
+    margin-top: -60px;
+    margin-left: -60px;
+    border: 2px solid white;
+  }
+
+  #dot {
+    -webkit-animation: dotspin 3s infinite;
+    -moz-animation: dotspin 3s infinite;
+    -o-animation: dotspin 3s infinite;
+    animation: dotspin 3s infinite;
+    transform: translateZ(-100px);
+
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    background-color: red;
+    text-align: center;
+    font-family: Orator;
+    margin-left: -40px;
+    margin-top: -40px;
+    line-height: 40px;
+    color: white;
+    border-radius: 100%;
+  }
+}
+
+/*
+---------------------> Navbar with Logo Styling <---------------------
+*/
+nav {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  background-color: black;
+  // background-image: url("../images/djc-logo-white.svgz");
+  // background-size: contain;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+
+  a {
+    font-family: 'Orator';
+    font-size: 1rem;
+    text-transform: lowercase;
+    display: inline-block;
+    margin: 1.25rem 2rem;
+    box-shadow: 0px;
+    transition: all 300ms ease-in-out;
+
+    &.selected {
+      box-shadow: inset 0px -2px white;
+      transition: all 300ms ease-in-out;
+    }
+
+    &:hover {
+      color: black;
+      box-shadow: inset 0px -1.3rem white;
+      transition: all 300ms ease-in-out;
+    }
+  }
+}
+
+#logo {
+  margin: 4px;
+  height: 72px;
+}
+
+/*
+---------------------> Main Page Content Styling <---------------------
+*/
+
+@mixin links {
+  a {
+    box-shadow: rgb(255, 255, 255) 0px -0.06em 0px inset;
+
+    &:hover {
+      color: black;
+      box-shadow: rgb(255, 255, 255) 0px -1.2em 0px inset;
+    }
+
+    transition: all 250ms ease-in-out;
+  }
+}
+
+@mixin info {
+  p {
+    position: relative;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+}
+
+#content {
+  position: absolute;
+  top: 60px;
+  height: 100%;
+  width: 100%;
+  font-family: Orator;
+
+  .index {
+    height: 33.3333%;
+    min-height: 140px;
+    text-align: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url("../images/djc-logo-white.png");
+
+    &.info {
+      @include info;
+      @include links;
+    }
+  }
+}
+
+
+
+#s01 {
+  background-color: #fe4141;
+  // background-position: center top;
+}
+
+#s02 {
+  background-color: #fa644a;
+  // background-position: center 9%;
+}
+
+#s03 {
+  background-color: #fa894a;
+  // background-position: center 18%;
+}
+
+#s04 {
+  background-color: #faed45;
+  // background-position: center 27%;
+}
+
+#s05 {
+  background-color: #67ffd1;
+  // background-position: center 36%;
+}
+
+#s06 {
+  background-color: #60d9ff;
+  // background-position: center 45%;
+}
+
+#s07 {
+  background-color: #4893f7;
+  // background-position: center 54%;
+}
+
+#plainte {
+  background-color: #5561fa;
+  // background-position: center 63%;
+}
+
+#s08 {
+  background-color: #9367ff;
+  // background-position: center 72%;
+}
+
+#s09 {
+  background-color: #dc67ff;
+  // background-position: center 81%;
+}
+
+#s10 {
+  background-color: #fe5daf;
+  // background-position: center 90%;
+}
+
+.shootme {
+  position: relative;
+  top: 50%;
+  height: 20px;
+  padding: 12px;
+  line-height: 20px;
+  font-size: 15px;
+  letter-spacing: normal;
+  color: white;
+  background: black;
+  transform: translateY(-50%);
+
+  span {
+    padding: 2px;
+  }
+
+  &:visited, &:hover, &:active {
+    color: white;
+  }
+
+  &:hover {
+    background: rgb(255, 48, 48);
+    cursor: pointer;
+  }
+}
+
+#digi {
+  font-family: Raleway;
+  background-color: rgb(255, 61, 72);
+  color: white;
+}
+
+/*
+---------------------> Sidebar Menu Styling <---------------------
+*/
+
+@media (max-width: 720px) {
+  #menu {
+    width: 100%;
+  }
+}
+
+@media (min-width: 720px) {
+  #menu {
+    width: 300px;
+  }
+}
+
+$menu-bgcolor: #ff4040;
+
+#menu {
+  position: fixed;
+  z-index: 5;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  text-align: center;
+
+  -webkit-transform: translate(-100%, 0);
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  -moz-transform: translate(-100%, 0);
+  -moz-transition: -moz-transform 200ms ease-in-out;
+  -o-transform: translate(-100%, 0);
+  -o-transition: -o-transform 200ms ease-in-out;
+  -ms-transform: translate(-100%, 0);
+  -ms-transition: -ms-transform 200ms ease-in-out;
+  transform: translate(-100%, 0);
+  transition: transform 200ms ease-in-out;
+
+  h3 {
+    height: 55px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 55px;
+    letter-spacing: 2px;
+  }
+
+  li {
+    font-size: 16px;
+    line-height: 2.5rem;
+
+    a {
+      display: block;
+
+      &:hover {
+        background-color: white;
+        color: $menu-bgcolor;
+      }
+    }
+
+    &.social {
+      padding-top: 1rem;
+
+      a {
+        font-size: 18px;
+        padding: 0 1rem;
+        display: inline-block;
+
+        span {
+          width: 18px;
+        }
+      }
+    }
+  }
+}
+
+#menu.clicked {
+  -webkit-transform: translate(0%, 0);
+  -moz-transform: translate(0%, 0);
+  -o-transform: translate(0%,0);
+  -ms-transform: translate(0%,0);
+  pointer-events: auto;
+}
+
+.menu-list {
+  li {
+    padding: .5rem;
+
+    a:hover {
+      cursor: pointer;
+      background-color: white;
+      color: $menu-bgcolor;
+    }
+  }
+}
+
+
+/*
+---------------------> Animated menu button <---------------------
+*/
+
+$color: white;
+$button-size: 1rem;
+$background: rgba(255,255,255,.35);
+$bg-hover: rgba(255,255,255,.5);
+$transition: 350ms;
+
+.lines-button {
+  display: inline-block;
+  padding: $button-size/1.777 $button-size/1.6;
+  transition: 350ms;
+  cursor: pointer;
+  user-select: none;
+  background: $background;
+  position: fixed;
+  z-index: 10;
+  top: 14px;
+  left: 14px;
+
+  &:hover {
+    background: $bg-hover;
+  }
+}
+
+@mixin line {
+  display: inline-block;
+  width: $button-size;
+  height: $button-size/8;
+  background: $color;
+  transition: $transition;
+}
+
+.lines {
+  @include line;
+  position: relative;
+
+  &:before, &:after {
+    @include line;
+    position: absolute;
+    left: 0;
+    content: "";
+  }
+  &:before{ top: $button-size/3; }
+  &:after { top: -$button-size/3; }
+
+  transform: translateY(-$button-size/3);
+}
+
+.lines-button.minus.close {
+  background: rgba(0,0,0,0);
+
+  &:hover {
+    background: $bg-hover;
+  }
+
+  .lines {
+    &:before, &:after {
+      top: 0;
+    }
+  }
+}
+
+/*
+---------------------> Footer Styling <---------------------
+*/
+
+footer {
+  font-size: 16px;
+  color: white;
+  background-color: black;
+}

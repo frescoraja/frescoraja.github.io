@@ -1,0 +1,344 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,700);
+@font-face {
+  font-family: 'Orator';
+  src: url("../type/oratorstd-webfont.eot?") format("eot"), url("../type/oratorstd-webfont.woff") format("woff"), url("../type/oratorstd-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+html, body {
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  background-color: black; }
+
+/*
+---------------------> Intro DIV Styling <---------------------
+*/
+@-webkit-keyframes boxspin {
+  from {
+    transform: rotate3d(1, 1, 1, 0deg); }
+  to {
+    transform: rotate3d(1, 1, 0, -360deg); } }
+@-moz-keyframes boxspin {
+  from {
+    transform: rotate3d(1, 1, 1, 0deg); }
+  to {
+    transform: rotate3d(1, 1, 0, -360deg); } }
+@-o-keyframes boxspin {
+  from {
+    transform: rotate3d(1, 1, 1, 0deg); }
+  to {
+    transform: rotate3d(1, 1, 0, -360deg); } }
+@keyframes boxspin {
+  from {
+    transform: rotate3d(1, 1, 1, 0deg); }
+  to {
+    transform: rotate3d(1, 1, 0, -360deg); } }
+@-webkit-keyframes dotspin {
+  from {
+    transform: rotateZ(0deg); }
+  to {
+    transform: rotateZ(1080deg); } }
+@-moz-keyframes dotspin {
+  from {
+    transform: rotateZ(0deg); }
+  to {
+    transform: rotateZ(1080deg); } }
+@-o-keyframes dotspin {
+  from {
+    transform: rotateZ(0deg); }
+  to {
+    transform: rotateZ(1080deg); } }
+@keyframes dotspin {
+  from {
+    transform: rotateZ(0deg); }
+  to {
+    transform: rotateZ(1080deg); } }
+#intro {
+  z-index: 100;
+  position: fixed;
+  background: black;
+  height: 100%;
+  width: 100%; }
+  #intro .context {
+    height: 100%;
+    perspective: 800px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d; }
+  #intro #box {
+    -webkit-animation: boxspin 6s linear infinite;
+    -moz-animation: boxspin 6s linear infinite;
+    -o-animation: boxspin 6s linear infinite;
+    animation: boxspin 6s linear infinite;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 50%;
+    top: 50%;
+    margin-top: -60px;
+    margin-left: -60px;
+    border: 2px solid white; }
+  #intro #dot {
+    -webkit-animation: dotspin 3s infinite;
+    -moz-animation: dotspin 3s infinite;
+    -o-animation: dotspin 3s infinite;
+    animation: dotspin 3s infinite;
+    transform: translateZ(-100px);
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    background-color: red;
+    text-align: center;
+    font-family: Orator;
+    margin-left: -40px;
+    margin-top: -40px;
+    line-height: 40px;
+    color: white;
+    border-radius: 100%; }
+
+/*
+---------------------> Navbar with Logo Styling <---------------------
+*/
+nav {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center; }
+  nav a {
+    font-family: 'Orator';
+    font-size: 1rem;
+    text-transform: lowercase;
+    display: inline-block;
+    margin: 1.25rem 2rem;
+    box-shadow: 0px;
+    transition: all 300ms ease-in-out; }
+    nav a.selected {
+      box-shadow: inset 0px -2px white;
+      transition: all 300ms ease-in-out; }
+    nav a:hover {
+      color: black;
+      box-shadow: inset 0px -1.3rem white;
+      transition: all 300ms ease-in-out; }
+
+#logo {
+  margin: 4px;
+  height: 72px; }
+
+/*
+---------------------> Main Page Content Styling <---------------------
+*/
+#content {
+  position: absolute;
+  top: 60px;
+  height: 100%;
+  width: 100%;
+  font-family: Orator; }
+  #content .index {
+    height: 33.3333%;
+    min-height: 140px;
+    text-align: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url("../images/djc-logo-white.png"); }
+    #content .index.info p {
+      position: relative;
+      font-size: 1.75rem;
+      line-height: 1.75rem;
+      letter-spacing: 1px;
+      text-transform: lowercase;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%); }
+    #content .index.info a {
+      box-shadow: white 0px -0.06em 0px inset;
+      transition: all 250ms ease-in-out; }
+      #content .index.info a:hover {
+        color: black;
+        box-shadow: white 0px -1.2em 0px inset; }
+
+#s01 {
+  background-color: #fe4141; }
+
+#s02 {
+  background-color: #fa644a; }
+
+#s03 {
+  background-color: #fa894a; }
+
+#s04 {
+  background-color: #faed45; }
+
+#s05 {
+  background-color: #67ffd1; }
+
+#s06 {
+  background-color: #60d9ff; }
+
+#s07 {
+  background-color: #4893f7; }
+
+#plainte {
+  background-color: #5561fa; }
+
+#s08 {
+  background-color: #9367ff; }
+
+#s09 {
+  background-color: #dc67ff; }
+
+#s10 {
+  background-color: #fe5daf; }
+
+.shootme {
+  position: relative;
+  top: 50%;
+  height: 20px;
+  padding: 12px;
+  line-height: 20px;
+  font-size: 15px;
+  letter-spacing: normal;
+  color: white;
+  background: black;
+  transform: translateY(-50%); }
+  .shootme span {
+    padding: 2px; }
+  .shootme:visited, .shootme:hover, .shootme:active {
+    color: white; }
+  .shootme:hover {
+    background: #ff3030;
+    cursor: pointer; }
+
+#digi {
+  font-family: Raleway;
+  background-color: #ff3d48;
+  color: white; }
+
+/*
+---------------------> Sidebar Menu Styling <---------------------
+*/
+@media (max-width: 720px) {
+  #menu {
+    width: 100%; } }
+@media (min-width: 720px) {
+  #menu {
+    width: 300px; } }
+#menu {
+  position: fixed;
+  z-index: 5;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  text-align: center;
+  -webkit-transform: translate(-100%, 0);
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  -moz-transform: translate(-100%, 0);
+  -moz-transition: -moz-transform 200ms ease-in-out;
+  -o-transform: translate(-100%, 0);
+  -o-transition: -o-transform 200ms ease-in-out;
+  -ms-transform: translate(-100%, 0);
+  -ms-transition: -ms-transform 200ms ease-in-out;
+  transform: translate(-100%, 0);
+  transition: transform 200ms ease-in-out; }
+  #menu h3 {
+    height: 55px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 55px;
+    letter-spacing: 2px; }
+  #menu li {
+    font-size: 16px;
+    line-height: 2.5rem; }
+    #menu li a {
+      display: block; }
+      #menu li a:hover {
+        background-color: white;
+        color: #ff4040; }
+    #menu li.social {
+      padding-top: 1rem; }
+      #menu li.social a {
+        font-size: 18px;
+        padding: 0 1rem;
+        display: inline-block; }
+        #menu li.social a span {
+          width: 18px; }
+
+#menu.clicked {
+  -webkit-transform: translate(0%, 0);
+  -moz-transform: translate(0%, 0);
+  -o-transform: translate(0%, 0);
+  -ms-transform: translate(0%, 0);
+  pointer-events: auto; }
+
+.menu-list li {
+  padding: .5rem; }
+  .menu-list li a:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #ff4040; }
+
+/*
+---------------------> Animated menu button <---------------------
+*/
+.lines-button {
+  display: inline-block;
+  padding: 0.56275rem 0.625rem;
+  transition: 350ms;
+  cursor: pointer;
+  user-select: none;
+  background: rgba(255, 255, 255, 0.35);
+  position: fixed;
+  z-index: 10;
+  top: 14px;
+  left: 14px; }
+  .lines-button:hover {
+    background: rgba(255, 255, 255, 0.5); }
+
+.lines {
+  display: inline-block;
+  width: 1rem;
+  height: 0.125rem;
+  background: white;
+  transition: 350ms;
+  position: relative;
+  transform: translateY(-0.33333rem); }
+  .lines:before, .lines:after {
+    display: inline-block;
+    width: 1rem;
+    height: 0.125rem;
+    background: white;
+    transition: 350ms;
+    position: absolute;
+    left: 0;
+    content: ""; }
+  .lines:before {
+    top: 0.33333rem; }
+  .lines:after {
+    top: -0.33333rem; }
+
+.lines-button.minus.close {
+  background: transparent; }
+  .lines-button.minus.close:hover {
+    background: rgba(255, 255, 255, 0.5); }
+  .lines-button.minus.close .lines:before, .lines-button.minus.close .lines:after {
+    top: 0; }
+
+/*
+---------------------> Footer Styling <---------------------
+*/
+footer {
+  font-size: 16px;
+  color: white;
+  background-color: black; }
+
+/*# sourceMappingURL=styles.css.map */
