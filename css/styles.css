@@ -13,19 +13,19 @@ html, body {
 */
 @-webkit-keyframes boxspin {
   from {
-    transform: rotate3d(1, 1, 1, 0deg); }
+    -webkit-transform: rotate3d(1, 1, 1, 0deg); }
   to {
-    transform: rotate3d(1, 1, 0, -360deg); } }
+    -webkit-transform: rotate3d(1, 1, 0, -360deg); } }
 @-moz-keyframes boxspin {
   from {
-    transform: rotate3d(1, 1, 1, 0deg); }
+    -moz-transform: rotate3d(1, 1, 1, 0deg); }
   to {
-    transform: rotate3d(1, 1, 0, -360deg); } }
+    -moz-transform: rotate3d(1, 1, 0, -360deg); } }
 @-o-keyframes boxspin {
   from {
-    transform: rotate3d(1, 1, 1, 0deg); }
+    -o-transform: rotate3d(1, 1, 1, 0deg); }
   to {
-    transform: rotate3d(1, 1, 0, -360deg); } }
+    -o-transform: rotate3d(1, 1, 0, -360deg); } }
 @keyframes boxspin {
   from {
     transform: rotate3d(1, 1, 1, 0deg); }
@@ -33,19 +33,19 @@ html, body {
     transform: rotate3d(1, 1, 0, -360deg); } }
 @-webkit-keyframes dotspin {
   from {
-    transform: rotateZ(0deg); }
+    -webkit-transform: rotateZ(0deg); }
   to {
-    transform: rotateZ(1080deg); } }
+    -webkit-transform: rotateZ(1080deg); } }
 @-moz-keyframes dotspin {
   from {
-    transform: rotateZ(0deg); }
+    -moz-transform: rotateZ(0deg); }
   to {
-    transform: rotateZ(1080deg); } }
+    -moz-transform: rotateZ(1080deg); } }
 @-o-keyframes dotspin {
   from {
-    transform: rotateZ(0deg); }
+    -o-transform: rotateZ(0deg); }
   to {
-    transform: rotateZ(1080deg); } }
+    -o-transform: rotateZ(1080deg); } }
 @keyframes dotspin {
   from {
     transform: rotateZ(0deg); }
@@ -83,6 +83,10 @@ html, body {
     -moz-animation: dotspin 3s infinite;
     -o-animation: dotspin 3s infinite;
     animation: dotspin 3s infinite;
+    -webkit-transform: translateZ(-100px);
+    -moz-transform: translateZ(-100px);
+    -o-transform: translateZ(-100px);
+    -ms-transform: translateZ(-100px);
     transform: translateZ(-100px);
     position: absolute;
     height: 40px;
