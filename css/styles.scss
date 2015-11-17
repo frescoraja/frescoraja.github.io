@@ -224,15 +224,16 @@ nav {
   }
 }
 
-#content {
+#about {
   position: absolute;
   top: 60px;
   height: 100%;
   width: 100%;
 
   .index {
+    position: relative;
     font-family: Orator;
-    height: 33.3333%;
+    height: 33.3333333%;
     min-height: 140px;
     text-align: center;
     background-attachment: fixed;
@@ -247,6 +248,13 @@ nav {
       font-family: Orator;
     }
   }
+
+}
+
+#work {
+  position: absolute;
+  top: 60px;
+  width: 100%;
 
   .work {
     font-family: Poiret One;
@@ -285,17 +293,14 @@ nav {
       }
     }
 
-    footer {
+    .tech {
       padding: 20px;
 
-      span {
-
-        img {
-          margin: 20px;
-          display: inline-block;
-          width: 80px;
-          height: 80px;
-        }
+      span img {
+        margin: 20px;
+        display: inline-block;
+        width: 80px;
+        height: 80px;
       }
     }
   }
@@ -433,6 +438,10 @@ nav {
     transition: background 200ms ease-in-out;
   }
 
+  p em {
+    font-size: .75rem;
+  }
+
   p a {
     display: inline-block;
     box-shadow: #00eee7 0px -0.06em 0px inset;
@@ -497,6 +506,7 @@ nav {
   transition: all 250ms ease-in-out;
 
   video {
+    height: 100%;
     width: 100%;
   }
 

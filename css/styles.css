@@ -138,14 +138,15 @@ nav {
 /*
 ---------------------> Main Page Content Styling <---------------------
 */
-#content {
+#about {
   position: absolute;
   top: 60px;
   height: 100%;
   width: 100%; }
-  #content .index {
+  #about .index {
+    position: relative;
     font-family: Orator;
-    height: 33.3333%;
+    height: 33.3333333%;
     min-height: 140px;
     text-align: center;
     background-attachment: fixed;
@@ -153,9 +154,9 @@ nav {
     background-size: contain;
     background-position: center;
     background-image: url("../images/djc-logo-white.png"); }
-    #content .index.info {
+    #about .index.info {
       font-family: Orator; }
-      #content .index.info p {
+      #about .index.info p {
         position: relative;
         font-size: 1.75rem;
         line-height: 1.75rem;
@@ -167,39 +168,44 @@ nav {
         -o-transform: translate(0, -50%);
         -ms-transform: translate(0, -50%);
         transform: translate(0, -50%); }
-      #content .index.info a {
+      #about .index.info a {
         box-shadow: white 0px -0.06em 0px inset;
         transition: all 250ms ease-in-out; }
-        #content .index.info a:hover {
+        #about .index.info a:hover {
           color: black;
           box-shadow: white 0px -1.2em 0px inset; }
-  #content .work {
+
+#work {
+  position: absolute;
+  top: 60px;
+  width: 100%; }
+  #work .work {
     font-family: Poiret One;
     text-align: center;
     color: white; }
-    #content .work header {
+    #work .work header {
       padding: 100px; }
-      #content .work header h3 {
+      #work .work header h3 {
         font-family: Times;
         font-weight: 300;
         font-style: italic; }
-    #content .work article {
+    #work .work article {
       padding: 80px; }
-      #content .work article .description {
+      #work .work article .description {
         width: 640px;
         margin: 40px auto; }
-        #content .work article .description p {
+        #work .work article .description p {
           font-family: Raleway;
           font-size: 20px;
           color: #333; }
-      #content .work article .links {
+      #work .work article .links {
         padding: 10px 30px;
         font-family: Orator;
         text-transform: lowercase;
         margin: 10px auto; }
-    #content .work footer {
+    #work .work .tech {
       padding: 20px; }
-      #content .work footer span img {
+      #work .work .tech span img {
         margin: 20px;
         display: inline-block;
         width: 80px;
@@ -287,6 +293,8 @@ nav {
   #crap .links:hover {
     color: white;
     background-color: #00eee7; }
+#crap p em {
+  font-size: .75rem; }
 #crap p a {
   display: inline-block;
   box-shadow: #00eee7 0px -0.06em 0px inset;
@@ -330,6 +338,7 @@ nav {
   -ms-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out; }
   .browser video {
+    height: 100%;
     width: 100%; }
   .browser.closed {
     display: none; }
