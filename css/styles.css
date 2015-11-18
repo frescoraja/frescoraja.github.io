@@ -499,7 +499,7 @@ nav {
 */
 .lines-button {
   display: inline-block;
-  padding: 0.56275rem 0.625rem;
+  padding: 0.5rem 0.625rem;
   transition: 350ms;
   cursor: pointer;
   user-select: none;
