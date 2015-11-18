@@ -368,7 +368,7 @@ nav {
     background-image: url("../images/play_btn.png");
     background-position: center center;
     background-repeat: no-repeat;
-    z-index: 50;
+    z-index: 4;
     cursor: pointer; }
     .browser .play.playing {
       background: none; }
@@ -423,15 +423,16 @@ nav {
   #menu {
     width: 100%; }
     #menu li {
-      font-size: 2rem;
-      padding: 1rem 0; } }
+      font-size: 2rem; }
+      #menu li a {
+        padding: 75rem 0; } }
 @media (min-width: 720px) {
   #menu {
     width: 300px; }
     #menu li {
-      font-size: 1rem;
-      padding: .25rem 0;
-      letter-spacing: 1px; } }
+      font-size: 1rem; }
+      #menu li a {
+        padding: .5rem 0; } }
 #menu {
   position: fixed;
   z-index: 5;
@@ -461,17 +462,19 @@ nav {
   #menu li {
     font-family: Poiret One;
     font-weight: bold;
-    line-height: 2.5rem; }
+    line-height: 2.5rem;
+    letter-spacing: 1px; }
     #menu li a {
-      display: block; }
+      display: block;
+      padding: 0.75rem 0; }
       #menu li a:hover {
         background-color: white;
         color: #ff4040; }
     #menu li.social {
-      padding-top: 1rem; }
+      letter-spacing: normal; }
       #menu li.social a {
         font-size: 18px;
-        padding: 0 1rem;
+        padding: .25rem 1rem;
         display: inline-block; }
         #menu li.social a span {
           width: 18px; }
