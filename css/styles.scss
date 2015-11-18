@@ -1,12 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Poiret+One:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
-// @import url(https://fonts.googleapis.com/css?family=Cantata+One:300,400,700);
-// @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,700);
-// @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700);
-// @import url(https://fonts.googleapis.com/css?family=Gilda+Display:300,400,700);
-// @import url(https://fonts.googleapis.com/css?family=Old+Standard+TT:300,400,700);
-// @import url(https://fonts.googleapis.com/css?family=Prata:300,400,700);
+
 @font-face {
   font-family: 'Orator';
   src: url("../type/oratorstd-webfont.eot?") format("eot"), url("../type/oratorstd-webfont.woff") format("woff"), url("../type/oratorstd-webfont.ttf") format("truetype");
@@ -391,18 +386,20 @@ nav {
   }
 }
 
+$digi-bg: #f72b4a;
+
 #digi {
   header {
-    background-color: #f72b4a;
+    background-color: $digi-bg;
   }
 
   .links {
     color: black;
-    border: 1px solid #f72b4a;
+    border: 1px solid $digi-bg;
 
     &:hover {
       color: white;
-      background-color: #f72b4a;
+      background-color: $digi-bg;
     }
 
     transition: background 200ms ease-in-out;
@@ -410,29 +407,36 @@ nav {
 
   p a {
     display: inline-block;
-    box-shadow: #f72b4a 0px -0.06em 0px inset;
+    box-shadow: $digi-bg 0px -0.06em 0px inset;
 
     &:hover {
       color: white;
-      box-shadow: #f72b4a 0px -1.2em 0px inset;
+      box-shadow: $digi-bg 0px -1.2em 0px inset;
     }
 
     transition: all 200ms ease-in-out;
   }
 }
 
+$crap-bg: #00fff8;
+
 #crap {
   header {
-    background-color: #00eee7;
+    background-color: $crap-bg;
+
+    h1 {
+      font-family: 'Press Start 2P';
+      font-size: 1.5rem;
+    }
   }
 
   .links {
     color: black;
-    border: 1px solid #00eee7;
+    border: 1px solid $crap-bg;
 
     &:hover {
       color: white;
-      background-color: #00eee7;
+      background-color: $crap-bg;
     }
 
     transition: background 200ms ease-in-out;
@@ -444,11 +448,11 @@ nav {
 
   p a {
     display: inline-block;
-    box-shadow: #00eee7 0px -0.06em 0px inset;
+    box-shadow: $crap-bg 0px -0.06em 0px inset;
 
     &:hover {
       color: white;
-      box-shadow: #00eee7 0px -1.2em 0px inset;
+      box-shadow: $crap-bg 0px -1.2em 0px inset;
     }
 
     transition: all 200ms ease-in-out;
@@ -456,18 +460,24 @@ nav {
 
 }
 
+$paint-bg: #00ff9c;
+
 #paint {
   header {
-    background-color: #4bcf80;
+    background-color: $paint-bg;
+
+    h1 {
+      font-family: Orator;
+    }
   }
 
   .links {
     color: black;
-    border: 1px solid #4bcf80;
+    border: 1px solid $paint-bg;
 
     &:hover {
       color: white;
-      background-color: #4bcf80;
+      background-color: $paint-bg;
     }
 
     transition: background 200ms ease-in-out;
@@ -475,11 +485,11 @@ nav {
 
   p a {
     display: inline-block;
-    box-shadow: #4bcf80 0px -0.06em 0px inset;
+    box-shadow: $paint-bg 0px -0.06em 0px inset;
 
     &:hover {
       color: white;
-      box-shadow: #4bcf80 0px -1.2em 0px inset;
+      box-shadow: $paint-bg 0px -1.2em 0px inset;
     }
 
     transition: all 200ms ease-in-out;

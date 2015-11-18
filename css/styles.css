@@ -285,40 +285,45 @@ nav {
     box-shadow: #f72b4a 0px -1.2em 0px inset; }
 
 #crap header {
-  background-color: #00eee7; }
+  background-color: #00fff8; }
+  #crap header h1 {
+    font-family: 'Press Start 2P';
+    font-size: 1.5rem; }
 #crap .links {
   color: black;
-  border: 1px solid #00eee7;
+  border: 1px solid #00fff8;
   transition: background 200ms ease-in-out; }
   #crap .links:hover {
     color: white;
-    background-color: #00eee7; }
+    background-color: #00fff8; }
 #crap p em {
   font-size: .75rem; }
 #crap p a {
   display: inline-block;
-  box-shadow: #00eee7 0px -0.06em 0px inset;
+  box-shadow: #00fff8 0px -0.06em 0px inset;
   transition: all 200ms ease-in-out; }
   #crap p a:hover {
     color: white;
-    box-shadow: #00eee7 0px -1.2em 0px inset; }
+    box-shadow: #00fff8 0px -1.2em 0px inset; }
 
 #paint header {
-  background-color: #4bcf80; }
+  background-color: #00ff9c; }
+  #paint header h1 {
+    font-family: Orator; }
 #paint .links {
   color: black;
-  border: 1px solid #4bcf80;
+  border: 1px solid #00ff9c;
   transition: background 200ms ease-in-out; }
   #paint .links:hover {
     color: white;
-    background-color: #4bcf80; }
+    background-color: #00ff9c; }
 #paint p a {
   display: inline-block;
-  box-shadow: #4bcf80 0px -0.06em 0px inset;
+  box-shadow: #00ff9c 0px -0.06em 0px inset;
   transition: all 200ms ease-in-out; }
   #paint p a:hover {
     color: white;
-    box-shadow: #4bcf80 0px -1.2em 0px inset; }
+    box-shadow: #00ff9c 0px -1.2em 0px inset; }
 
 /*
 ---------------------> Browser Styling <---------------------
