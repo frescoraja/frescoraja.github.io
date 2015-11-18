@@ -23,7 +23,14 @@ $menuToggles.click(function (){
 
 function initBrowsers() {
   $('.ui .min').click(function(){
-    $(this).closest('.browser').removeClass('maxed').toggleClass('minied');
+    var $this = $(this);
+    $browser = $this.closest(".browser");
+    $browser.removeClass('maxed').toggleClass('minied');
+    var $player = $this.closest(".browser").find(".play");
+    if ($player.hasClass("playing")) {
+      $player.toggleClass("playing");
+      $player.next("video")[0].pause();
+    }
   });
 
   $('.ui .max').click(function(){
@@ -42,6 +49,7 @@ function initVideos() {
   $("video").each(function(){
     var $this = $(this);
     var video = $this.get(0);
+    video.preload = "auto";
     $this.bind('ended', function() {
       $this.closest(".browser").removeClass('maxed');
       $this.prev('.play').removeClass('playing');
@@ -54,11 +62,14 @@ function initVideos() {
     $this.toggleClass('playing');
     var video = $(this).next("video").get(0);
     if(video.paused === true) {
-      $(this).closest(".browser").addClass('maxed');
+      $this.closest(".browser").addClass("maxed");
+      $("html, body").animate({
+        scrollTop: $this.closest("article").offset().top
+      }, 350);
       video.play();
     } else {
+      $this.closest(".browser").removeClass("maxed");
       video.pause();
-      $(this).closest(".browser").removeClass('maxed');
     }
   });
 }
