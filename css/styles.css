@@ -171,44 +171,44 @@ nav {
           color: black;
           box-shadow: white 0px -1.2em 0px inset; }
 
-#work {
+#works {
   position: absolute;
   top: 60px;
   width: 100%; }
-  #work .work {
+  #works .project {
     font-family: Poiret One;
     text-align: center;
     color: white; }
-    #work .work header {
+    #works .project header {
       padding: 100px; }
-      #work .work header h3 {
+      #works .project header h3 {
         font-family: Times;
         font-weight: 300;
         font-style: italic; }
     @media (max-width: 720px) {
-      #work .work article {
-        padding: 50px 10px; }
-        #work .work article .description {
+      #works .project article {
+        padding: 40px 10px; }
+        #works .project article .description {
           width: 90%;
           margin: 40px auto; } }
     @media (min-width: 720px) {
-      #work .work article {
-        padding: 80px; }
-        #work .work article .description {
+      #works .project article {
+        padding: 60px; }
+        #works .project article .description {
           width: 640px;
           margin: 40px auto; } }
-    #work .work article p {
+    #works .project article p {
       font-family: Raleway;
       font-size: 20px;
       color: #333; }
-    #work .work article .links {
+    #works .project article .links {
       padding: 10px 30px;
       font-family: Orator;
       text-transform: lowercase;
       margin: 10px auto; }
-    #work .work .tech {
+    #works .project .tech {
       padding: 20px; }
-      #work .work .tech span img {
+      #works .project .tech span img {
         margin: 16px;
         display: inline-block;
         width: 64px;
