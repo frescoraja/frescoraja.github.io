@@ -181,11 +181,6 @@ nav {
   }
 }
 
-#logo {
-  margin: 4px;
-  height: 72px;
-}
-
 /*
 ---------------------> Main Page Content Styling <---------------------
 */
@@ -308,10 +303,10 @@ nav {
       padding: 20px;
 
       span img {
-        margin: 20px;
+        margin: 16px;
         display: inline-block;
-        width: 80px;
-        height: 80px;
+        width: 64px;
+        height: 64px;
       }
     }
   }
@@ -660,7 +655,7 @@ $paint-bg: #28fcaa;
       font-size: 2rem;
 
       a {
-        padding: 75rem 0;
+        padding: .75rem 0;
       }
     }
   }
@@ -686,6 +681,7 @@ $menu-bgcolor: #ff4040;
   position: fixed;
   z-index: 5;
   height: 100%;
+  min-height: 500px;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
   text-align: center;
@@ -740,6 +736,18 @@ $menu-bgcolor: #ff4040;
           width: 18px;
         }
       }
+    }
+  }
+
+  .menu-logo {
+    position: absolute;
+    bottom: 0;
+    padding: 30px 0;
+    width: 100%;
+
+    img {
+      width: 64px;
+      height: auto;
     }
   }
 }

@@ -131,10 +131,6 @@ nav {
       box-shadow: inset 0px -1.3rem white;
       transition: all 300ms ease-in-out; }
 
-#logo {
-  margin: 4px;
-  height: 72px; }
-
 /*
 ---------------------> Main Page Content Styling <---------------------
 */
@@ -194,7 +190,7 @@ nav {
         padding: 50px 10px; }
         #work .work article .description {
           width: 90%;
-          margin: 20px auto; } }
+          margin: 40px auto; } }
     @media (min-width: 720px) {
       #work .work article {
         padding: 80px; }
@@ -213,10 +209,10 @@ nav {
     #work .work .tech {
       padding: 20px; }
       #work .work .tech span img {
-        margin: 20px;
+        margin: 16px;
         display: inline-block;
-        width: 80px;
-        height: 80px; }
+        width: 64px;
+        height: 64px; }
 
 #s01 {
   background-color: #fe4141; }
@@ -438,7 +434,7 @@ nav {
     #menu li {
       font-size: 2rem; }
       #menu li a {
-        padding: 75rem 0; } }
+        padding: .75rem 0; } }
 @media (min-width: 720px) {
   #menu {
     width: 300px; }
@@ -450,6 +446,7 @@ nav {
   position: fixed;
   z-index: 5;
   height: 100%;
+  min-height: 500px;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
   text-align: center;
@@ -491,6 +488,14 @@ nav {
         display: inline-block; }
         #menu li.social a span {
           width: 18px; }
+  #menu .menu-logo {
+    position: absolute;
+    bottom: 0;
+    padding: 30px 0;
+    width: 100%; }
+    #menu .menu-logo img {
+      width: 64px;
+      height: auto; }
 
 #menu.clicked {
   -webkit-transform: translate(0%, 0);
