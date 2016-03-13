@@ -17,14 +17,14 @@ header h1 {
 
 main {
   background-color: #f1f1f1;
-  padding: 16px 0 72px 0;
+  padding: 15px 0 75px 0;
 }
 
 li {
   display: flex;
   background-color: white;
   height: 104px;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .logo-container {
