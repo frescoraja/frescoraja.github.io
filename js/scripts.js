@@ -60,12 +60,6 @@ function initVideos() {
   });
 
   $(".play").click(function() {
-
-    $("video").each(function(idx, video) {
-      $(video).closest(".browser").removeClass("maxed");
-      video.pause();
-    });
-
     var $this = $(this);
     $this.toggleClass('playing');
     var video = $(this).next("video").get(0);
