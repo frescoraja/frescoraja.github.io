@@ -3,16 +3,18 @@ var $toggle = $("#toggle");
 var $menu = $("#menu");
 var $loadingScreen = $("#intro");
 
-initBrowsers();
-initVideos();
 
-$(window).load(function () {
+$(document).ready(function () {
+  initBrowsers();
+  initVideos();
+
   setTimeout(function () {
     $loadingScreen.fadeOut(3000,function() {
       $loadingScreen.remove();
     });
   }, 0);
 });
+
 
 
 $menuToggles.click(function (){
@@ -49,7 +51,7 @@ function initVideos() {
   $("video").each(function(){
     var $this = $(this);
     var video = $this.get(0);
-    video.preload = "auto";
+    video.preload = "none";
     $this.bind('ended', function() {
       $this.closest(".browser").removeClass('maxed');
       $this.prev('.play').removeClass('playing');
@@ -58,6 +60,12 @@ function initVideos() {
   });
 
   $(".play").click(function() {
+
+    $("video").each(function(idx, video) {
+      $(video).closest(".browser").removeClass("maxed");
+      video.pause();
+    });
+
     var $this = $(this);
     $this.toggleClass('playing');
     var video = $(this).next("video").get(0);
