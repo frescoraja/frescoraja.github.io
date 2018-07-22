@@ -149,7 +149,9 @@ nav {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background-image: url("../images/djc-logo-white.png"); }
+    background-image: url("../images/djc-logo-white.png");
+    /* Fix for 'background-attachment' bug in Chrome: */
+    -webkit-transform: translate3d(0, 0, 0); }
     #about .index.info {
       font-family: Orator; }
       #about .index.info p {
@@ -536,11 +538,11 @@ nav {
   background: white;
   transition: 350ms;
   position: relative;
-  -webkit-transform: translateY(-0.33333rem);
-  -moz-transform: translateY(-0.33333rem);
-  -o-transform: translateY(-0.33333rem);
-  -ms-transform: translateY(-0.33333rem);
-  transform: translateY(-0.33333rem); }
+  -webkit-transform: translateY(-0.3333333333rem);
+  -moz-transform: translateY(-0.3333333333rem);
+  -o-transform: translateY(-0.3333333333rem);
+  -ms-transform: translateY(-0.3333333333rem);
+  transform: translateY(-0.3333333333rem); }
   .lines:before, .lines:after {
     display: inline-block;
     width: 1rem;
@@ -551,12 +553,12 @@ nav {
     left: 0;
     content: ""; }
   .lines:before {
-    top: 0.33333rem; }
+    top: 0.3333333333rem; }
   .lines:after {
-    top: -0.33333rem; }
+    top: -0.3333333333rem; }
 
 .lines-button.minus.close {
-  background: transparent; }
+  background: rgba(0, 0, 0, 0); }
   .lines-button.minus.close:hover {
     background: rgba(255, 255, 255, 0.5); }
   .lines-button.minus.close .lines:before, .lines-button.minus.close .lines:after {
@@ -572,3 +574,5 @@ nav {
   background-color: #dddddd; }
   #contact a {
     margin: 0px 2px; }
+
+/*# sourceMappingURL=styles.css.map */
