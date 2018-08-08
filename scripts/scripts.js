@@ -1,7 +1,7 @@
-var $menuToggles = $(".menu-toggle");
 var $toggle = $("#toggle");
 var $menu = $("#menu");
 var $loadingScreen = $("#intro");
+var noop = function() {};
 
 
 $(document).ready(function () {
@@ -15,16 +15,24 @@ $(document).ready(function () {
   }, 0);
 });
 
+$toggle.mouseenter(function() {
+  $toggle.addClass("close");
+  $menu.addClass("clicked");
+});
 
+$menu.mouseleave(function() {
+  $toggle.removeClass("close");
+  $menu.removeClass("clicked");
+});
 
-$menuToggles.click(function (){
+$toggle.click(function() {
   $toggle.toggleClass("close");
   $menu.toggleClass("clicked");
 });
 
 
 function initBrowsers() {
-  $('.ui .min').click(function(){
+  $('.ui .min').click(function() {
     var $this = $(this);
     $browser = $this.closest(".browser");
     $browser.removeClass('maxed').toggleClass('minied');
@@ -35,7 +43,7 @@ function initBrowsers() {
     }
   });
 
-  $('.ui .max').click(function(){
+  $('.ui .max').click(function() {
     $(this).closest('.browser').removeClass('minied').toggleClass('maxed');
   });
 
@@ -48,7 +56,7 @@ function initBrowsers() {
 
 function initVideos() {
 
-  $("video").each(function(){
+  $("video").each(function() {
     var $this = $(this);
     var video = $this.get(0);
     video.preload = "none";
