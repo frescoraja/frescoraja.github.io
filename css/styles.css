@@ -64,10 +64,10 @@
     -ms-transform-style: preserve-3d;
     transform-style: preserve-3d; }
   #intro #box {
-    -webkit-animation: boxspin 3s linear infinite;
-    -moz-animation: boxspin 3s linear infinite;
-    -o-animation: boxspin 3s linear infinite;
-    animation: boxspin 3s linear infinite;
+    -webkit-animation: boxspin 2s linear infinite;
+    -moz-animation: boxspin 2s linear infinite;
+    -o-animation: boxspin 2s linear infinite;
+    animation: boxspin 2s linear infinite;
     position: absolute;
     width: 120px;
     height: 120px;
@@ -77,10 +77,10 @@
     margin-left: -60px;
     border: 2px solid white; }
   #intro #dot {
-    -webkit-animation: dotspin 3s infinite;
-    -moz-animation: dotspin 3s infinite;
-    -o-animation: dotspin 3s infinite;
-    animation: dotspin 3s infinite;
+    -webkit-animation: dotspin 2s infinite;
+    -moz-animation: dotspin 2s infinite;
+    -o-animation: dotspin 2s infinite;
+    animation: dotspin 2s infinite;
     -webkit-transform: translateZ(-100px);
     -moz-transform: translateZ(-100px);
     -o-transform: translateZ(-100px);
@@ -104,6 +104,9 @@
     -ms-border-radius: 100%;
     border-radius: 100%; }
 
+body {
+  height: 100vh; }
+
 /*
 ---------------------> Navbar with Logo Styling <---------------------
 */
@@ -111,7 +114,8 @@ nav {
   height: 60px;
   background-color: black;
   color: white;
-  text-align: center; }
+  text-align: center;
+  min-width: 400px; }
   nav a {
     font-family: 'Orator';
     font-size: 1rem;
@@ -135,7 +139,8 @@ nav {
   position: absolute;
   top: 60px;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  min-width: 400px; }
   #about .index {
     position: relative;
     font-family: Orator;
@@ -172,6 +177,7 @@ nav {
 
 #works {
   height: 100vh;
+  min-width: 400px;
   overflow-y: scroll;
   scroll-behavior: smooth; }
   #works .project {

@@ -1,31 +1,25 @@
 var $toggle = $("#toggle");
 var $menu = $("#menu");
+var $menuLinks = $(".menu-link");
 var $loadingScreen = $("#intro");
-var noop = function() {};
-
 
 $(document).ready(function () {
   initBrowsers();
   initVideos();
 
   setTimeout(function () {
-    $loadingScreen.fadeOut(3000,function() {
+    $loadingScreen.fadeOut(2000,function() {
       $loadingScreen.remove();
     });
   }, 0);
 });
 
-$toggle.mouseenter(function() {
-  $toggle.addClass("close");
-  $menu.addClass("clicked");
-});
-
-$menu.mouseleave(function() {
-  $toggle.removeClass("close");
-  $menu.removeClass("clicked");
-});
-
 $toggle.click(function() {
+  $toggle.toggleClass("close");
+  $menu.toggleClass("clicked");
+});
+
+$menuLinks.click(function() {
   $toggle.toggleClass("close");
   $menu.toggleClass("clicked");
 });
