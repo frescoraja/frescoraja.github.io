@@ -764,8 +764,8 @@ $menu-bgcolor: #ff4040;
 
 $color: white;
 $button-size: 1rem;
-$background: rgba(255,255,255,.35);
-$bg-hover: rgba(255,255,255,.5);
+$tgl-background: rgba(0, 0, 0,.35);
+$tgl-bg-hover: rgba(255,255,255,.35);
 $transition: 350ms;
 
 .lines-button {
@@ -774,14 +774,14 @@ $transition: 350ms;
   transition: 350ms;
   cursor: pointer;
   user-select: none;
-  background: $background;
+  background: $tgl-background;
   position: fixed;
   z-index: 10;
   top: 14px;
   left: 14px;
 
   &:hover {
-    background: $bg-hover;
+    background: $tgl-bg-hover;
   }
 }
 
@@ -817,7 +817,7 @@ $transition: 350ms;
   background: rgba(0,0,0,0);
 
   &:hover {
-    background: $bg-hover;
+    background: $tgl-bg-hover;
   }
 
   .lines {
