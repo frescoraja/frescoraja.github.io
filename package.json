@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "gulpjs": "gulp scripts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gulp": "gulp scripts",
+    "css": "sass css/styles.scss css/styles.min.css -s compressed",
+    "build": "yarn css && yarn gulp"
   },
   "keywords": [],
   "author": "David Carter",
@@ -14,6 +15,7 @@
     "gulp": "^4.0.0",
     "gulp-concat": "*",
     "gulp-rename": "*",
-    "gulp-uglify": "*"
+    "gulp-uglify": "*",
+    "sass": "*"
   }
 }

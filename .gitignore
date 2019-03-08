@@ -4,9 +4,8 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
-# Ignore SASS stuff
+css/styles.css
 css/styles.css.map
-css/styles.scss
+css/styles.min.css.map
 .sass-cache
 node_modules
-

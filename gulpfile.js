@@ -4,7 +4,7 @@ var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 
 // script path
-var jsFiles = 'js/scripts.js',
+var jsFiles = 'scripts/scripts.js',
     jsDest = 'scripts';
 
 gulp.task('scripts', function() {
