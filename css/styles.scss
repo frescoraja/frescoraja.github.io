@@ -226,8 +226,6 @@ nav {
     background-size: contain;
     background-position: center;
     background-image: url("../images/djc-logo-white.png");
-    // Fix for 'background-attachment' bug in Chrome:
-    -webkit-transform: translate3d(0, 0, 0);
 
     &.info {
       @include info;
