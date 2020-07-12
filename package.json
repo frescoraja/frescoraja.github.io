@@ -12,7 +12,7 @@
   "author": "David Carter",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
     "gulp-concat": "*",
     "gulp-rename": "*",
     "gulp-uglify": "*",
